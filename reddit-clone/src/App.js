@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-import {Sidebar} from './Components/Sider'
-import RightCard from './Components/RightCards';
+import { Sidebar } from './Components/Sider';
+
 const App = () => {
 	return (
 		<div>
-			<Sidebar/>
-			<RightCard />
+			<Sidebar />
 		</div>
 	);
 };

@@ -1,10 +1,10 @@
 .body_div {
-	background-color: rgb(190, 217, 243);
+	background-color: rgb(240, 242, 245);
 }
 .card {
 	width: 20rem;
 	float: right;
-	margin: 50px 50px;
+	margin: 20px 50px;
 	margin-right: 70px;
 	clear: both;
 	box-shadow: 10px 20px 30px white;
@@ -17,6 +17,7 @@
 	margin-right: 70px;
 	width: 20rem;
 	height: 5rem;
+	margin-top: 0px;
 	box-shadow: 10px 20px 30px white;
 }
 .alphabets_div > p {
