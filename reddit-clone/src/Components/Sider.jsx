@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styles from './Sider.module.css';
 import 'antd/dist/antd.css';
 import { getAllCommunities } from './utils';
 import { Layout, Menu } from 'antd';
 
 import RightCards from './RightCards';
+import Navbar from './navbar/Navbar';
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -34,6 +34,7 @@ export const Sidebar = () => {
 	//   },[showResults]);
 	return (
 		<div>
+			<Navbar />
 			<Layout>
 				<Content style={{ padding: '0 50px' }}>
 					<Layout
