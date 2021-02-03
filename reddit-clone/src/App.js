@@ -1,11 +1,7 @@
-import React from 'react';
-import './App.css';
-const App = () => {
-	return (
-		<div className='App'>
-			<h1>Reddit Clone</h1>
-		</div>
-	);
-};
+import { Comments1 } from "./Components/PostInDetail/Comments1";
+
+function App() {
+  return <Comments1 />;
+}
 
 export default App;
