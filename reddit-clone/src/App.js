@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
+import RightCard from './Components/RightCards';
 const App = () => {
 	return (
-		<div className='App'>
-			<h1>Reddit Clone</h1>
+		<div>
+			<RightCard />
 		</div>
 	);
 };
