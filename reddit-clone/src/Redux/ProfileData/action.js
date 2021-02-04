@@ -26,10 +26,6 @@ const getProfileDetails = () => (dispatch) => {
 		.get('https://fast-lake-64955.herokuapp.com/rightCard')
 		.then((res) => {
 			dispatch(profileDetailsSuccess(res.data));
-			// console.log(res.data);
-			// return {
-			// 	res: res.data,
-			// };
 		})
 		.catch((err) => {
 			console.log(err);

@@ -3,12 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, ListGroup } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { getProfileDetails } from '../Redux/ProfileData/action';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
 
 import styles from './RightCards.module.css';
 
 const RightCards = () => {
+	const history = useHistory();
 	const dispatch = useDispatch();
 	const data = useSelector((state) => state.data);
 	const alphabets = [
@@ -44,6 +45,37 @@ const RightCards = () => {
 		dispatch(getProfileDetails());
 	}, [dispatch]);
 
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+	};
+
+	const goToPage = (btnName) => {
+		history.push(`/${btnName}`);
+	};
+
+	const goToRedditPage1 = (item) => {
+		history.push(`/${item}`);
+	};
+
+	const goToRedditPage2 = (item) => {
+		history.push(`/${item}`);
+	};
+
+	const goToRedditPage3 = (item) => {
+		history.push(`/${item}`);
+	};
+
+	const goToRedditPage4 = (item) => {
+		history.push(`/${item}`);
+	};
+
+	const goToRedditPage5 = (item) => {
+		history.push(`/${item}`);
+	};
+
 	return (
 		<div className={styles.body_div} key={uuid()}>
 			{data.map((i) =>
@@ -58,7 +90,11 @@ const RightCards = () => {
 							>
 								<p className={styles.ListGroup_banner_img__para}>{item.p}</p>
 							</ListGroup.Item>
-							<ListGroup.Item className={styles.ListGroup_item} key={uuid()}>
+							<ListGroup.Item
+								className={styles.ListGroup_item}
+								onClick={() => goToRedditPage1(item.name1)}
+								key={uuid()}
+							>
 								<span key={uuid()} className={styles.numbering}>
 									<span
 										style={{
@@ -81,7 +117,11 @@ const RightCards = () => {
 								/>
 								<span style={{ textAlign: 'right' }}>{item.name1}</span>
 							</ListGroup.Item>
-							<ListGroup.Item className={styles.ListGroup_item} key={uuid()}>
+							<ListGroup.Item
+								className={styles.ListGroup_item}
+								onClick={() => goToRedditPage2(item.name2)}
+								key={uuid()}
+							>
 								<span className={styles.numbering}>
 									<span
 										key={uuid()}
@@ -105,7 +145,11 @@ const RightCards = () => {
 								/>
 								<span style={{ textAlign: 'right' }}>{item.name2}</span>
 							</ListGroup.Item>
-							<ListGroup.Item className={styles.ListGroup_item} key={uuid()}>
+							<ListGroup.Item
+								className={styles.ListGroup_item}
+								onClick={() => goToRedditPage3(item.name3)}
+								key={uuid()}
+							>
 								<span key={uuid()} className={styles.numbering}>
 									<span
 										key={uuid()}
@@ -126,7 +170,11 @@ const RightCards = () => {
 								/>
 								<span style={{ textAlign: 'right' }}>{item.name3}</span>
 							</ListGroup.Item>
-							<ListGroup.Item className={styles.ListGroup_item} key={uuid()}>
+							<ListGroup.Item
+								className={styles.ListGroup_item}
+								onClick={() => goToRedditPage4(item.name4)}
+								key={uuid()}
+							>
 								<span key={uuid()} className={styles.numbering}>
 									<span
 										key={uuid()}
@@ -175,11 +223,20 @@ const RightCards = () => {
 									alt='image_icon'
 									className={styles.img_icon}
 								/>
-								<span key={uuid()} style={{ textAlign: 'right' }}>
+								<span
+									onClick={() => goToRedditPage5(item.name5)}
+									key={uuid()}
+									style={{ textAlign: 'right' }}
+								>
 									{item.name5}
 								</span>
 
-								<button className={styles.see_all_btn}>{item.btnName}</button>
+								<button
+									onClick={() => goToPage(item.btnName)}
+									className={styles.see_all_btn}
+								>
+									{item.btnName}
+								</button>
 							</ListGroup.Item>
 						</ListGroup>
 					</Card>
@@ -214,8 +271,8 @@ const RightCards = () => {
 				<div>
 					<p>Reddit Inc © 2021. All rights reserved</p>
 
-					<p className={styles.back_to_top_btn}>
-						<a href='#'>Back To Top</a>
+					<p onClick={scrollToTop} className={styles.back_to_top_btn}>
+						Back To Top
 					</p>
 				</div>
 			</div>

@@ -1,10 +1,9 @@
-.cards{
-   
-    width: 400px;
-    /* border: 1px solid black;
+.cards {
+	width: 400px;
+	/* border: 1px solid black;
      */
-    display:flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .cards > div {
     height: 70px;
@@ -17,19 +16,21 @@
     background-color: rgb(246,247,248);
 }
 .cards > div > img {
-    height: 32px;
-    border-radius: 24px;
-    margin: 0 5px;
+	height: 32px;
+	border-radius: 24px;
+	margin: 0 5px;
 }
 .cards > div > i {
-    margin: 0 5px;
+	margin: 0 5px;
 }
-.btn{
-    border-radius: 20px;
-   color: blue;
-   background-color:  rgb(231, 231, 231);
+.btn {
+	border-radius: 20px;
+	color: blue;
+	background-color: rgb(231, 231, 231);
 }
-.heading{
-    background-color:rgb(231, 231, 231);
+.heading {
+	background-color: rgb(231, 231, 231);
 }
-.hidden { display:none; }
+.hidden {
+	display: none;
+}
