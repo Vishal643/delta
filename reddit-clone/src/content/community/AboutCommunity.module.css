@@ -1,0 +1,46 @@
+.card {
+	width: 20rem;
+	float: right;
+	margin: 0px 50px;
+	margin-right: 70px;
+	clear: both;
+	box-shadow: 10px 20px 30px white;
+}
+.ListGroup_item_last {
+	cursor: pointer;
+	height: fit-content;
+	background-color: rgb(255, 255, 255);
+}
+.ListGroup_item_last > p {
+	padding: 10px;
+	font-size: 15px;
+}
+.about_communit_list {
+	height: 50px;
+	background-color: blue;
+}
+.about_communit_list > p {
+	text-align: left;
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	font-weight: 600;
+}
+.ListGroup_item_create_post {
+	cursor: pointer;
+	height: fit-content;
+	background-color: rgb(255, 255, 255);
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.ListGroup_item_create_post > p {
+	margin: 10px 50px;
+	margin-bottom: 0px;
+}
+.create_post_btn {
+	border-radius: 30px 40px 30px 40px;
+	height: 30px;
+	width: 280px;
+	margin: 30px 20px;
+}

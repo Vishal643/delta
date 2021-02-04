@@ -7,11 +7,12 @@ import { useHistory } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
 
 import styles from './RightCards.module.css';
-
+// import { useParams } from 'react-router-dom';
 const RightCards = () => {
+	// const { id } = useParams();
 	const history = useHistory();
 	const dispatch = useDispatch();
-	const data = useSelector((state) => state.data);
+	const data = useSelector((state) => state.reddit.data);
 	const alphabets = [
 		'A',
 		'B',
@@ -41,6 +42,7 @@ const RightCards = () => {
 		'Z',
 		'#',
 	];
+	console.log(data);
 	useEffect(() => {
 		dispatch(getProfileDetails());
 	}, [dispatch]);
