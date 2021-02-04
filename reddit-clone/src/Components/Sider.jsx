@@ -37,9 +37,10 @@ export const Sidebar = () => {
 			<Layout>
 				<Navbar />
 				<Header style={{ backgroundColor: 'white', height: '100px' }}>
-					<h3 style={{ marginLeft: '150px' }}>
+					<h3 style={{ marginLeft: '150px',marginBottom: 0 }}>
 						Today's Top Growing Communities
 					</h3>
+                    <p style={{ marginLeft: '150px' }}>Browse Reddit's top growing communities. Find the top communities in your favorite category.</p>
 				</Header>
 				<Content style={{ padding: '0 50px', marginLeft: '150px' }}>
 					<Layout
@@ -83,16 +84,50 @@ export const Sidebar = () => {
 						</Sider>
 						<Content style={{ padding: '0 24px', minHeight: 280 }}>
 							<div className={styless.cards}>
+                               {data.length !== 0? <div style={{height: "35px",paddingTop: 0,backgroundColor: "rgb(231, 231, 231)"}}>Today's Top Growing Communities</div>: null}
 								{data?.map((item, i) => (
+                                  <>
 									<div>
+                                         
 										{item.id}
 										<i
 											className='fa fa-caret-up'
 											style={{ fontsize: '48px', color: 'green' }}
 										></i>
-										<img src={item.img} alt='photos' />
-										{item.title}{' '}
+
+                                         <div className={styless.details}>
+                                            <img className={styless.icons} src={item.img} alt='photos' /> 
+                                            <span>{item.title}</span>
+                                            <div style={{display:"flex"}}>
+                                                <div className={styless.members}>
+                                                    <p>{item.members}</p><br/>
+                                                    Members
+                                                    </div>
+
+                                                <div className={styless.online}>
+                                                    <p>{item.online}</p><br/>
+                                                    Online
+                                                </div>
+                                            
+                                            </div>
+                                            <br/>
+                                                 <div className={styless.tagline}>
+                                                    <p>{item.tagline}</p>
+                                                </div>
+                                            <button
+                                                // onClick={() => }
+                                                className={styless.see_all_btn}
+                                            >
+                                                View Community
+                                                </button>   
+                                         </div>
+
+										<img className={styless.icons} src={item.img} alt='photos' />
+
+										<span>{item.title}</span>{' '}
 									</div>
+                                    
+                                    </>
 								))}
 							</div>
 						</Content>
