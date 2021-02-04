@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styles from './Sider.module.css'
+// import styles from './Sider.module.css'
 import 'antd/dist/antd.css';
 import styless from './Sider.module.css'
+import RightCard from './RightCards';
 import {getAllCommunities} from './utils'
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import Navbar from '../navbar/Navbar';
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
@@ -31,13 +33,16 @@ export const Sidebar = () => {
     }
     // React.useEffect(() => {
     //     console.log(showResults)
-      
+    
     //   },[showResults]);
     return(
         <>
-            <Layout>
-  
-  <Content style={{ padding: '0 50px' }}>
+            <Layout >
+                <Navbar/>
+            <Header style={{backgroundColor:"white",height:"100px"}}>
+                <h3 style={{marginLeft:"150px"}}>Today's Top Growing Communities</h3>
+            </Header>
+  <Content style={{ padding: '0 50px' ,marginLeft:"150px"}}>
  
     <Layout className="site-layout-background" style={{ padding: '24px 0' }}>
       <Sider className="site-layout-background" width={200}>
@@ -78,18 +83,23 @@ export const Sidebar = () => {
                    data?.map((item , i) => (
                       
                     <div>{item.id}
-                    
-                    <img src={item.img}/>
 
                     <i className="fa fa-caret-up" style={{fontsize: "48px" ,color: "green"}}></i>
+                    
+                    <img src={item.img} alt="photos"/>
 
                     {item.title} </div>  
                    ))
                }
                 
-            </div> 
+            </div>
+         
       </Content>
+
+      <RightCard/>
+
     </Layout>
+    
   </Content>
   <Footer style={{ textAlign: 'center' }}></Footer>
 </Layout>,

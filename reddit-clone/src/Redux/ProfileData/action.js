@@ -23,7 +23,7 @@ const profileDetailsFailure = (error) => ({
 const getProfileDetails = () => (dispatch) => {
 	dispatch(profileDetailsRequest());
 	axios
-		.get('http://localhost:3004/sidebar_card_data')
+		.get('https://fast-lake-64955.herokuapp.com/rightCard')
 		.then((res) => {
 			dispatch(profileDetailsSuccess(res.data));
 			// console.log(res.data);
