@@ -1,0 +1,36 @@
+.cards {
+	width: 400px;
+	/* border: 1px solid black;
+     */
+	display: flex;
+	flex-direction: column;
+}
+.cards > div {
+    height: 70px;
+    width: 620px;
+    border: 1px solid rgb(223, 223, 223);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding: 20px 50px ;
+    background-color: rgb(246,247,248);
+}
+.cards > div > img {
+	height: 32px;
+	border-radius: 24px;
+	margin: 0 5px;
+}
+.cards > div > i {
+	margin: 0 5px;
+}
+.btn {
+	border-radius: 20px;
+	color: blue;
+	background-color: rgb(231, 231, 231);
+}
+.heading {
+	background-color: rgb(231, 231, 231);
+}
+.hidden {
+	display: none;
+}
