@@ -3,11 +3,7 @@ import Landing from "./Components/landing/Landing";
 import Routes from "./Routes/Routes";
 
 function App() {
-  return (
-    <div className="App">
-      <Routes />
-    </div>
-  );
+  return <Routes />;
 }
 
 export default App;

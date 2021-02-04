@@ -24,20 +24,22 @@ const commentsFail = () => {
   };
 };
 
-export const getComments = () => (dispatch) => {
+export const getComments = (subredditName, postId) => (dispatch) => {
   dispatch(commentsRequest());
   axios
-    .get("https://reddit-mock-server.herokuapp.com/sports/1")
+    .get(`https://reddit-mock-server.herokuapp.com/${subredditName}/${postId}`)
     .then((res) => dispatch(commentsSuccess(res.data)))
     .catch((err) => dispatch(commentsFail()));
 };
 
-export const updateComments = (updatedData) => (dispatch) => {
-  console.log(updatedData);
-
+export const updateComments = (updatedData, subredditName, postId) => (
+  dispatch
+) => {
+  dispatch(commentsRequest());
   axios
-    .patch("https://reddit-mock-server.herokuapp.com/sports/1", {
-      comments: updatedData,
-    })
-    .then(() => dispatch(getComments()));
+    .patch(
+      `https://reddit-mock-server.herokuapp.com/${subredditName}/${postId}`,
+      updatedData
+    )
+    .then(() => dispatch(getComments(subredditName, postId)));
 };

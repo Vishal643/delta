@@ -61,10 +61,7 @@ export default function Posts() {
           </div>
           <div className="post-footer">
             <div className="comments footer-action">
-              <Link
-                className="link"
-                to={`/comment/${post.subreddit}/${post.id}`}
-              >
+              <Link className="link" to={`/post/${post.subreddit}/${post.id}`}>
                 <ModeCommentIcon className="comment-icon" />
                 <span>{post.comment_count} Comments</span>
               </Link>

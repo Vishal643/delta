@@ -22,7 +22,7 @@ const homeFailure = () => {
 const getPost = () => (dispatch) => {
   dispatch(getHome());
   axios
-    .get("https://reddit-mock-server.herokuapp.com/latest")
+    .get("https://reddit-mock-server.herokuapp.com/hot")
     .then((res) => {
       let arr = res.data;
       let arr_2 = [];
