@@ -3,14 +3,13 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import styless from './Sider.module.css'
 import {getAllCommunities} from './utils'
-
-import Navbar from '../navbar/Navbar';
 import { Layout, Menu } from 'antd';
 
 import RightCards from './RightCards';
 import Navbar from './navbar/Navbar';
 
 const { SubMenu } = Menu;
+const { Header, Content, Sider } = Layout;
 
 export const Sidebar = () => {
     const [isLoading, setIsLoading] = React.useState(false);
@@ -96,12 +95,12 @@ export const Sidebar = () => {
          
       </Content>
 
-      <RightCard/>
+      <RightCards/>
 
     </Layout>
     
   </Content>
-  <Footer style={{ textAlign: 'center' }}></Footer>
+ 
 </Layout>,
         </>
     )
