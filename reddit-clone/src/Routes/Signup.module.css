@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 25%;
+  margin: 40px auto;
+  flex-direction: column;
+  box-shadow: 0 0 10px lightgray;
+}
+.container > div {
+  margin: 20px;
+}
+input {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+button {
+  display: block;
+  margin: 20px;
+}

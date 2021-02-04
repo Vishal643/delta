@@ -1,7 +1,13 @@
-import { Comments1 } from "./Components/PostInDetail/Comments1";
+import "./App.css";
+import Landing from "./Components/landing/Landing";
+import Routes from "./Routes/Routes";
 
 function App() {
-  return <Comments1 />;
+  return (
+    <div className="App">
+      <Routes />
+    </div>
+  );
 }
 
 export default App;
