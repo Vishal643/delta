@@ -1,5 +1,5 @@
 # Group Name: delta
-## Contributers
+## Contributors
 ## Vishal Kumar
 ## Prabhu Siddharth
 ## Uditanshu Kumar
