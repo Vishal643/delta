@@ -29,7 +29,7 @@ const getRedditReducer = (state = initState, { type, payload }) => {
 			return {
 				...state,
 				isLoading: false,
-				data: [...state.data, payload],
+				data: [payload],
 				isProfileDataFetched: true,
 			};
 		}
