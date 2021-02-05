@@ -6,6 +6,8 @@ import Signup from "./Signup";
 import { Comments1 } from "../Components/PostInDetail/Comments1";
 import Navbar from "../Components/navbar/Navbar";
 import { PostStory1 } from "../Components/PostStory/PostStory1";
+import { Sidebar } from "../Components/Community/Sider";
+import SubRedditShow from "../SubRedditContent/SubRedditShow";
 
 const Routes = () => {
   return (
@@ -20,6 +22,12 @@ const Routes = () => {
         </Route>
         <Route exact path="/Post">
           <PostStory1 />
+        </Route>
+        <Route exact path="/Community">
+          <Sidebar />
+        </Route>
+        <Route exact path="/askScience">
+          <SubRedditShow />
         </Route>
         <Route exact path="/sign-up">
           <Signup />
