@@ -15,13 +15,10 @@ const PostStory1 = () => {
     "music",
     "sports",
     "movies",
-    "news",
-    "memes",
-    "travel",
-    "crypto",
-    "fashion",
-    "food",
-    "health",
+    "wallstreetbets",
+    "dogcoins",
+    "askScience",
+    "whatisthisthing",
   ];
 
   const [currSelectType, setCurrSelectType] = React.useState("post");
@@ -54,7 +51,13 @@ const PostStory1 = () => {
 
   const handlePostSubmit1 = () => {
     var post_id = uuid();
-    var subredditName = subreddit.split("/")[1];
+
+    var subredditName = "sports";
+
+    if (subreddit !== "") {
+      subredditName = subreddit.split("/")[1];
+    }
+
     var payload1 = {
       id: post_id,
       title: title1,
