@@ -9,11 +9,7 @@ const Dropdown = () => {
         <button class="dropbtn">Dropdown</button>
         <div class="dropdown-content">
           <p>
-            <Link to="/">Home</Link>
-          </p>
-
-          <p>
-            <Link to="/community">Community</Link>
+            <Link to="/">Home </Link>
           </p>
           <p>
             <Link to="/Post">Post</Link>
