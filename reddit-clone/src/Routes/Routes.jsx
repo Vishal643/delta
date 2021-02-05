@@ -5,6 +5,7 @@ import Login from "./Login";
 import Signup from "./Signup";
 import { Comments1 } from "../Components/PostInDetail/Comments1";
 import Navbar from "../Components/navbar/Navbar";
+import { PostStory1 } from "../Components/PostStory/PostStory1";
 
 const Routes = () => {
   return (
@@ -16,6 +17,9 @@ const Routes = () => {
         </Route>
         <Route exact path="/post/:subredditName/:postId">
           <Comments1 />
+        </Route>
+        <Route exact path="/Post">
+          <PostStory1 />
         </Route>
         <Route exact path="/sign-up">
           <Signup />

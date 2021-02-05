@@ -56,7 +56,10 @@ export default function Posts() {
             {post.image_src && <img src={post.image_src} alt="" />}
             {post.video_src && <video></video>}
             {post.description && (
-              <span className="description">{post.description}</span>
+              <span
+                className="description"
+                dangerouslySetInnerHTML={{ __html: post.description }}
+              ></span>
             )}
           </div>
           <div className="post-footer">

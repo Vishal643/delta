@@ -25,6 +25,7 @@ const Dropdown = () => {
       >
         <option value="home">Home</option>
         <option value="community">Community</option>
+        <option values="Post">Post</option>
       </select>
     </div>
   );

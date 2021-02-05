@@ -80,7 +80,7 @@ const Comments1 = () => {
   };
 
   return (
-    <div style={{ margin: "10px auto", width: "45vw", minWidth: "500px" }}>
+    <div style={{ margin: "10px auto", width: "45vw", minWidth: "800px" }}>
       <div
         style={{
           width: "100%",

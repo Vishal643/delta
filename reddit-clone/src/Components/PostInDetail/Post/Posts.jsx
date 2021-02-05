@@ -23,7 +23,7 @@ export function Posts({
   console.log(comment_count);
   return (
     <div className="posts-wrapper">
-      <div className="post">
+      <div className="post" style={{ minWidth: "500px" }}>
         <div className="post-sidebar">
           <ArrowUpwardIcon className="upvote" />
           <span>{upvotes}</span>
@@ -43,7 +43,12 @@ export function Posts({
         <div className="post-body">
           <span className="title">{title}</span>
           {image_src && <img src={image_src} alt="" />}
-          {description && <span className="description">{description}</span>}
+          {description && (
+            <div
+              className="description"
+              dangerouslySetInnerHTML={{ __html: description }}
+            ></div>
+          )}
         </div>
         <div className="post-footer">
           <div className="comments footer-action">
