@@ -25,7 +25,7 @@ const commentsFail = () => {
 };
 
 export const getComments = (subredditName, postId) => (dispatch) => {
-  dispatch(commentsRequest());
+  // dispatch(commentsRequest());
   axios
     .get(`https://reddit-mock-server.herokuapp.com/${subredditName}/${postId}`)
     .then((res) => dispatch(commentsSuccess(res.data)))
@@ -35,7 +35,7 @@ export const getComments = (subredditName, postId) => (dispatch) => {
 export const updateComments = (updatedData, subredditName, postId) => (
   dispatch
 ) => {
-  dispatch(commentsRequest());
+  // dispatch(commentsRequest());
   axios
     .patch(
       `https://reddit-mock-server.herokuapp.com/${subredditName}/${postId}`,

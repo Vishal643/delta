@@ -10,6 +10,8 @@ import ShareIcon from "@material-ui/icons/Share";
 import BookmarkIcon from "@material-ui/icons/Bookmark";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { Button } from "@material-ui/core";
+import { useSelector, useDispatch } from "react-redux";
+import { updateComments } from "../../../Redux/PostInDetail/action";
 
 export function Posts({
   upvotes,
@@ -19,15 +21,47 @@ export function Posts({
   image_src,
   description,
   comment_count,
+  upvote_status,
+  subredditName,
+  postId,
 }) {
-  console.log(comment_count);
+  const dispatch = useDispatch();
+
+  const handleUpvoteCountIncrease = () => {
+    if (upvote_status == null || upvote_status === false) {
+      const payload = {
+        upvotes: upvotes + 1,
+        upvote_status: true,
+      };
+
+      dispatch(updateComments(payload, subredditName, postId));
+    }
+  };
+
+  const handleUpvoteCountDecrease = () => {
+    if (upvote_status == null || upvote_status === true) {
+      const payload = {
+        upvotes: upvotes - 1,
+        upvote_status: false,
+      };
+
+      dispatch(updateComments(payload, subredditName, postId));
+    }
+  };
+
   return (
     <div className="posts-wrapper">
       <div className="post" style={{ minWidth: "500px" }}>
         <div className="post-sidebar">
-          <ArrowUpwardIcon className="upvote" />
+          <ArrowUpwardIcon
+            className="upvote"
+            onClick={handleUpvoteCountIncrease}
+          />
           <span>{upvotes}</span>
-          <ArrowDownwardIcon className="downvote" />
+          <ArrowDownwardIcon
+            className="downvote"
+            onClick={handleUpvoteCountDecrease}
+          />
         </div>
         <div className="post-title">
           <img src="assets/images/subreddit.jpg" alt="" />
