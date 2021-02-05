@@ -6,15 +6,5 @@ function getAllCommunities(){
  
 }
 
-function getNearYou(){
 
-}
-
-function getSports() {
-
-}
-
-function getGaming() {
-
-}
-export {getAllCommunities , getNearYou , getSports , getGaming}
+export {getAllCommunities}
