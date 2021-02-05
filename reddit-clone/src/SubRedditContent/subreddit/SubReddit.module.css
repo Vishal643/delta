@@ -1,0 +1,47 @@
+.subreddit_page_banner_div {
+  height: 200px;
+  background-color: blue;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+.title_image_div {
+  height: 100px;
+  background-color: white;
+  border: 1px solid wheat;
+  display: flex;
+  flex-direction: row;
+}
+
+.img_icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-left: 150px;
+  border: 4px solid wheat;
+  padding: 5px;
+  margin-top: -15px;
+  background-color: white;
+}
+
+.para {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 30px;
+}
+.join_btn {
+  margin: 10px 10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 25px 28px 25px 28px;
+  background-color: blue;
+  border: 2px solid blue;
+  color: white;
+  font-weight: 600;
+}
+
+.tag_name {
+  margin-top: 50px;
+  margin-left: -370px;
+  color: rgb(150, 150, 150);
+}

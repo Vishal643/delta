@@ -1,0 +1,14 @@
+.cards{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    position: relative;
+    right: -400px;
+    top: -500px;
+    display:flex
+}
+.cards > div {
+    height: 50px;
+    width: 400px;
+    border: 1px solid black;
+}
