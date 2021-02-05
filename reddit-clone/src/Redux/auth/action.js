@@ -45,7 +45,7 @@ const signFailure = () => {
 const signData = ({ id, username, password, email, name }) => (dispatch) => {
   dispatch(signRequest());
   axios
-    .post("https://rohan-server-mocker-masai.herokuapp.com/user", {
+    .post("https://reddit-mock-server.herokuapp.com/user", {
       id,
       username,
       password,
@@ -62,7 +62,7 @@ const signData = ({ id, username, password, email, name }) => (dispatch) => {
 const loginData = ({ username, password }) => (dispatch) => {
   dispatch(loginRequest());
   axios
-    .get("https://rohan-server-mocker-masai.herokuapp.com/user")
+    .get("https://reddit-mock-server.herokuapp.com/user")
     .then((res) => {
       //   console.log(res);
       let arr = res.data;
