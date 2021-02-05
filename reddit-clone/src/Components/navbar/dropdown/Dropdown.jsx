@@ -23,7 +23,7 @@ const Dropdown = () => {
         value={title}
         onChange={(e) => handleChange(e)}
       >
-        <option value="home">Home</option>
+        <option value="">Home</option>
         <option value="community">Community</option>
         <option values="Post">Post</option>
       </select>

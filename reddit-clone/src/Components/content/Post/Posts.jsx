@@ -8,7 +8,7 @@ import BookmarkIcon from "@material-ui/icons/Bookmark";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { Button } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
-import { getPost, upvotePost } from "../../../Redux/home/action";
+import { getPost, upvotePost, downvotePost } from "../../../Redux/home/action";
 import { Link } from "react-router-dom";
 
 export default function Posts() {
@@ -17,8 +17,12 @@ export default function Posts() {
   React.useEffect(() => {
     dispatch(getPost());
   }, [dispatch]);
-  const handleClick = (id, upvotes, subreddit, change) => {
+  const handleUpvote = (id, upvotes, subreddit, change) => {
     dispatch(upvotePost({ id, upvotes: upvotes + change, subreddit }));
+    dispatch(getPost());
+  };
+  const handleDownvote = (id, upvotes, subreddit, change) => {
+    dispatch(downvotePost({ id, upvotes: upvotes + change, subreddit }));
     dispatch(getPost());
   };
   return (
@@ -29,14 +33,14 @@ export default function Posts() {
             <ArrowUpwardIcon
               className="upvote"
               onClick={(e) =>
-                handleClick(post.id, post.upvotes, post.subreddit, 1)
+                handleUpvote(post.id, post.upvotes, post.subreddit, 1)
               }
             />
             <span>{post.upvotes}</span>
             <ArrowDownwardIcon
               className="downvote"
               onClick={(e) =>
-                handleClick(post.id, post.upvotes, post.subreddit, -1)
+                handleDownvote(post.id, post.upvotes, post.subreddit, -1)
               }
             />
           </div>
