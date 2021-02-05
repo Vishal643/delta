@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, ListGroup } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
-import { getProfileDetails } from '../Redux/ProfileData/action';
+import { getProfileDetails } from '../../Redux/ProfileData/action';
 import { useHistory } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
 
@@ -59,23 +58,28 @@ const RightCards = () => {
 	};
 
 	const goToRedditPage1 = (item) => {
-		history.push(`/${item}`);
+		let urlArr = item.split('/');
+		history.push(`/${urlArr[1]}`);
 	};
 
 	const goToRedditPage2 = (item) => {
-		history.push(`/${item}`);
+		let urlArr = item.split('/');
+		history.push(`/${urlArr[1]}`);
 	};
 
 	const goToRedditPage3 = (item) => {
-		history.push(`/${item}`);
+		let urlArr = item.split('/');
+		history.push(`/${urlArr[1]}`);
 	};
 
 	const goToRedditPage4 = (item) => {
-		history.push(`/${item}`);
+		let urlArr = item.split('/');
+		history.push(`/${urlArr[1]}`);
 	};
 
 	const goToRedditPage5 = (item) => {
-		history.push(`/${item}`);
+		let urlArr = item.split('/');
+		history.push(`/${urlArr[1]}`);
 	};
 
 	return (

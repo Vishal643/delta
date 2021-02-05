@@ -9,7 +9,7 @@ import MoreHoriz from "@material-ui/icons/MoreHoriz";
 import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
 
 import "./Mainbar.css";
-import Posts from "../Post/Posts";
+import Posts from "../SubRedditPost/SubRedditPosts";
 
 export default function MainBar() {
   return (

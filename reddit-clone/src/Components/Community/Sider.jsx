@@ -6,7 +6,6 @@ import { getAllCommunities } from './utils';
 import { Layout, Menu } from 'antd';
 
 import RightCards from './RightCards';
-import Navbar from './navbar/Navbar';
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -36,7 +35,6 @@ export const Sidebar = () => {
 	return (
 		<>
 			<Layout>
-				<Navbar />
 				<Header style={{ backgroundColor: 'white', height: '100px' }}>
 					<h3 style={{ marginLeft: '150px' }}>
 						Today's Top Growing Communities

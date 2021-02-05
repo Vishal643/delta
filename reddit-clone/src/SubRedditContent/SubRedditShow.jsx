@@ -3,13 +3,11 @@ import React from 'react';
 import styles from './SubRedditShow.module.css';
 import SubReddit from './subreddit/SubReddit';
 import MainBar from './titlebar/Mainbar';
-import Cards from './side-bar/Cards';
-import Navbar from '../Components/navbar/Navbar';
+import Cards from './AboutSubRedditCard/AboutSubRedditCards';
 
 const SubRedditShow = () => {
 	return (
 		<>
-			<Navbar />
 			<SubReddit />
 			<div className={styles.content}>
 				<div className={styles.bars_wrapper}>

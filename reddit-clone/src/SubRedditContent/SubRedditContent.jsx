@@ -1,22 +1,20 @@
 import React from 'react';
 
-import './Content.css';
+import './SubRedditContent.css';
 import TrendingToday from './trending/Trending';
 import MainBar from './titlebar/Mainbar';
-import SideBar from './side-bar/Sidebar';
-import Navbar from '../Components/navbar/Navbar';
+import AboutSubRedditCard from './AboutSubRedditCard/AboutSubRedditCards';
 
-export default function Content() {
+export default function SubRedditContent() {
 	return (
 		<>
-			<Navbar />
 			<div className='content'>
 				<TrendingToday />
 				<div className='bars-wrapper'>
 					<span className='popular-posts-title'>Popular posts</span>
 					<div className='bars-wrapper-inside'>
 						<MainBar />
-						<SideBar />
+						<AboutSubRedditCard />
 					</div>
 				</div>
 			</div>

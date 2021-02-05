@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styles from './Cards.module.css';
+import styles from './AboutSubRedditCards.module.css';
 
-import AboutCommunity from '../community/AboutCommunity';
+import AboutCommunity from '../AboutCommunity/AboutCommunity';
 
 const Cards = () => {
 	return (

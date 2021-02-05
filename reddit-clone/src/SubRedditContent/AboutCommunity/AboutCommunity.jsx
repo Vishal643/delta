@@ -15,7 +15,7 @@ const AboutCommunity = () => {
 				</div>
 				<div className={styles.ListGroup_item_last} key={uuid()}>
 					<p>
-						Welcome to r/OnePiece, the community for Eiichiro Oda's manga and
+						Welcome to r/askScience, the community for Eiichiro Oda's manga and
 						anime series One Piece. From the East Blue to the New World,
 						anything related to the world of One Piece belongs here! If you've
 						just set sail with the Straw Hat Pirates, be wary of spoilers on
