@@ -1,0 +1,34 @@
+.actions {
+  display: flex;
+  align-items: center;
+  color: rgb(130, 130, 130);
+  justify-content: space-between;
+  width: 24%;
+}
+Button {
+  border-radius: 20px;
+}
+.actions div:nth-child(2) {
+  margin: 0px 15px;
+}
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.profile {
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile:hover {
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.profile svg {
+  margin-right: 8px;
+}
