@@ -3,7 +3,7 @@ import Content from "../content/Content";
 
 export default function Landing() {
   return (
-    <div style={{ backgroundColor: "rgb(218,224,230)" }}>
+    <div style={{ backgroundColor: "#dae0e6" }}>
       <Content />
     </div>
   );

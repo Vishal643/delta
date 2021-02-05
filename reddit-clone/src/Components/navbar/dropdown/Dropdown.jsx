@@ -1,32 +1,25 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Dropdown.css";
 
 const Dropdown = () => {
-  let history = useHistory();
-  const [title, setTitle] = React.useState("");
-  console.log(title);
-  const handleChange = (e) => {
-    setTitle(e.target.value);
-    // for changing the route
-    history.push(`/${title}`);
-  };
-  history.push(`/${title}`);
   return (
     <div>
-      <select
-        name="dropdown"
-        style={{
-          width: "180px",
-          height: "35px",
-          boxShadow: "0 0 4px lightgray",
-        }}
-        value={title}
-        onChange={(e) => handleChange(e)}
-      >
-        <option value="">Home</option>
-        <option value="community">Community</option>
-        <option values="Post">Post</option>
-      </select>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <p>
+            <Link to="/">Home</Link>
+          </p>
+
+          <p>
+            <Link to="/community">Community</Link>
+          </p>
+          <p>
+            <Link to="/Post">Post</Link>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
