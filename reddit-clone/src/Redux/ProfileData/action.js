@@ -26,7 +26,7 @@ const profileDetailsFailure = (error) => ({
 const getProfileDetails = () => (dispatch) => {
 	dispatch(profileDetailsRequest());
 	axios
-		.get('https://fast-lake-64955.herokuapp.com/rightCard')
+		.get('https://reddit-mock-server.herokuapp.com/rightCard')
 		.then((res) => {
 			dispatch(profileDetailsSuccess(res.data));
 		})
