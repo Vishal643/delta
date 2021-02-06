@@ -14,7 +14,7 @@ Team Members:
 title: reddit.com CLONE
 ---
 
-description: Created a Clone of hellobonsai.com using React, HTML, CSS, JAVASCRIPT for Build Week Assessment!
+description: Created a Clone of reddit.com using React, HTML, CSS, JAVASCRIPT for Build Week Assessment!
 ---
 reddit.com Clone was designed from the ground and purely done in teamwork and can be run locally.
 
