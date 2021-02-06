@@ -48,5 +48,5 @@ reddit.com Clone was designed from the ground and purely done in teamwork and ca
 # SubReddit_Page
 ![SubReddit_Page](https://github.com/Vishal643/delta/blob/main/reddit-clone/public/assets/images/subreddit_page.png)
 
-#Post_Page
+# Post_Page
 ![Post_Page](https://github.com/Vishal643/delta/blob/main/reddit-clone/public/assets/images/Post_Page.png)
