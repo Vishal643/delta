@@ -1,10 +1,19 @@
 # Group Name: delta
+
 <<<<<<< HEAD
+
 ## Contributors
+
 =======
+
 ## Contributers
->>>>>>> main
+
+> > > > > > > main
+
 ## Vishal Kumar
+
 ## Prabhu Siddharth
+
 ## Uditanshu Kumar
+
 ## Rohan Baranwal
