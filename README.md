@@ -32,8 +32,21 @@ reddit.com Clone was designed from the ground and purely done in teamwork and ca
     4. Post Page
     5. You can also comment on each Post from Home Page.
     6. You can Upvote and downvote as well, you can like and dislike the comments.
-    4. Community Page, by clicking the View All Button from Home Page
+    4. Community Page, by clicking the Communit Link From DropDown.
     6. From Community Page you can go to askScience Subreddit Page
     
     You should see the listed sites above loaded in your web browser. Try to refresh the browser if some parts are not loaded fully. 
-    
+## You can View Some of the Pages here:-  
+
+# Home Page
+![Home_Page1](https://github.com/Vishal643/delta/blob/main/reddit-clone/public/assets/images/Home_Page.png)
+![Home_Page2](https://github.com/Vishal643/delta/blob/main/reddit-clone/public/assets/images/Home_Page2.png)
+
+# Community Page
+![Community_Page](https://github.com/Vishal643/delta/blob/main/reddit-clone/public/assets/images/Community_page.png)
+
+# SubReddit_Page
+![SubReddit_Page](https://github.com/Vishal643/delta/blob/main/reddit-clone/public/assets/images/subreddit_page.png)
+
+#Post_Page
+![Post_Page](https://github.com/Vishal643/delta/blob/main/reddit-clone/public/assets/images/Post_Page.png)
