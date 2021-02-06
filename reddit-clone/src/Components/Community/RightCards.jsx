@@ -91,7 +91,7 @@ const RightCards = () => {
 							<ListGroup.Item
 								className={styles.ListGroup_banner_img}
 								style={{
-									backgroundImage: `url(${item.backgroundImage})`,
+									backgroundImage: `url(${item.bannerImage})`,
 								}}
 							>
 								<p className={styles.ListGroup_banner_img__para}>{item.p}</p>
