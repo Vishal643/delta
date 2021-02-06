@@ -20,7 +20,26 @@ reddit.com Clone was designed from the ground and purely done in teamwork and ca
 
 > **Important Note:** All functionalities are not available and some part are purely static Pages.
 
-
+## Libraries that we have used:-
+  
+    1. material-ui
+    2. antd
+    3. axios
+    4. bootstrap
+    5. dompurify
+    6. draft-convert
+    7. draft-js
+    8. react
+    9. react-bootstrap
+    10. react-dom
+    11. react-draft-wysiwyg
+    12. react-redux
+    13. react-router-dom
+    14. react-scripts
+    15. redux
+    16. redux-thunk
+    17. uuid
+    18. web-vitals
 ## In order to run the reddit.com, firstly clone this repository locally. 
 
 1.  After that use npm install to get node_modules folder
