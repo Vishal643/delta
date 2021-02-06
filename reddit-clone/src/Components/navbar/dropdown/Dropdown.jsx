@@ -12,6 +12,9 @@ const Dropdown = () => {
             <Link to="/">Home </Link>
           </p>
           <p>
+            <Link to="/community">Community</Link>
+          </p>
+          <p>
             <Link to="/Post">Post</Link>
           </p>
         </div>
