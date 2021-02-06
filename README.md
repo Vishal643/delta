@@ -1,14 +1,6 @@
 # Group Name: delta
 
-<<<<<<< HEAD
-
 ## Contributors
-
-=======
-
-## Contributers
-
-> > > > > > > main
 
 ## Vishal Kumar
 
