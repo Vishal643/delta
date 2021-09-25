@@ -1,22 +1,9 @@
-# Team Delta
-# Titans Unit 3 Build Week Project
-### reddit.com Clone
+### Reddit Clone
+### Live Link : https://rohan-reddit-clone.netlify.app/
+--------
+Description: Created a Clone of reddit.com using React, HTML, CSS, JAVASCRIPT for Build Week Assessment!
 ---
-Group Name: Delta
----
-Team Members:
----
-1. Uditanshu Kumar
-2. Rohan Baranwal
-3. Prabhu Sidarth
-4. Vishal Kumar
----
-title: reddit.com CLONE
----
-
-description: Created a Clone of reddit.com using React, HTML, CSS, JAVASCRIPT for Build Week Assessment!
----
-reddit.com Clone was designed from the ground and purely done in teamwork and can be run locally.
+Reddit Clone was designed from the ground and purely done in teamwork and can be run locally.
 
 > **Important Note:** All functionalities are not available and some part are purely static Pages.
 
